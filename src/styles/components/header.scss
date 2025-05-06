@@ -1,0 +1,15 @@
+.header {
+  &__title {
+    margin: 0 0 20px;
+    font-size: var(--font-size-h2);
+
+    @include breakpoint(md) {
+      text-align: center;
+    }
+  }
+
+  &__description {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,56 @@
+.modal {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  height: 100dvh;
+  border: 0;
+  background: linear-gradient(var(--color-quatenary), var(--color-white));
+  padding: 30px;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0;
+
+  @include breakpoint(md) {
+    width: 1260px;
+    max-width: calc(100% - 40px);
+    height: min-content;
+    max-height: calc(100dvh - 40px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+
+    &::backdrop {
+      backdrop-filter: blur(5px);
+      background-color: rgb(0 0 0 / 50%);
+    }
+  }
+
+  &__close-button {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
+
+  &__heading {
+    font-size: var(--font-size-h2);
+    margin: 0 0 23px;
+    padding: 3px 78px 3px 0;
+  }
+
+  &__description {
+    margin: 0 0 20px;
+    max-width: 800px;
+    color: var(--color-content);
+  }
+
+  &__player {
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    width: 100%;
+    max-height: 675px;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+}

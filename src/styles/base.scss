@@ -1,0 +1,47 @@
+:root {
+  font-family: var(--font-family);
+  line-height: var(--line-height-text);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-content);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(var(--color-white), var(--color-quatenary));
+  min-height: 100dvh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: var(--line-height-heading);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+}
+
+p {
+  line-height: var(--line-height-text);
+  font-weight: var(--font-weight-regular);
+
+  a,
+  a:visited {
+    color: var(--color-secondary);
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+strong {
+  font-weight: var(--font-weight-bold);
+}

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery Grid Demo</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="app__header header">
+        <h1 class="header__title">Snippet Heading</h1>
+        <p class="header__description">Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad <a href="#">minim</a> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </header>
+      <nav class="app__navigation navigation">
+        <h2 class="navigation__title">Links</h2>
+        <div class="navigation__buttons">
+          <a class="button" href="https://sabinapsuj.dev/" target="_blank" rel="noopener noreferrer">Link One <i class="button__icon icon icon-star"></i></a>
+          <a class="button button--secondary" href="https://sabinapsuj.dev/" target="_blank" rel="noopener noreferrer">Link Two</a>
+        </div>
+      </nav>
+      <main class="app__content">
+        <div class="gallery">
+          <div class="gallery__item gallery__item--1">
+            <img
+              class="gallery__image"
+              src="/images/gallery-image-1.png"
+              alt="Lorem ipsum gallery image 1"
+            />
+          </div>
+          <div class="gallery__item gallery__item--2">
+            <img
+              class="gallery__image"
+              src="/images/gallery-image-2.png"
+              alt="Lorem ipsum gallery image 2"
+            />
+          </div>
+          <div class="gallery__item gallery__item--3">
+            <img
+              class="gallery__image"
+              src="/images/gallery-image-3.png"
+              alt="Lorem ipsum gallery image 3"
+            />
+          </div>
+          <div class="gallery__item gallery__item--4">
+            <img
+              class="gallery__image"
+              src="/images/gallery-image-4.png"
+              alt="Lorem ipsum gallery image 4"
+            />
+            <button class="gallery__play-button button button--circle button--play" data-open-dialog="video-dialog" aria-label="Play video">
+              <i class="button__icon button__icon--lg icon icon-play"></i>
+            </button>
+            
+          </div>
+          <div class="gallery__item gallery__item--5">
+            <img
+              class="gallery__image"
+              src="/images/gallery-image-5.png"
+              alt="Lorem ipsum gallery image 5"
+            />
+          </div>
+        </div>
+      </main>
+      <footer class="app__footer">
+        <strong>Media copyright</strong> - Lorem ipsum dolor sit amet.
+      </footer>
+    </div>
+    <dialog id="video-dialog" class="modal" aria-labelledby="video-dialog-title" aria-describedby="video-dialog-description" aria-modal="true">
+      <button aria-label="Close modal" class="modal__close-button button button--circle button--danger" autofocus><i class="button__icon button__icon--lg icon icon-close"></i></button>
+      <h2 id="video-dialog-title" class="modal__heading">Modal Heading</h2>
+      <p id="video-dialog-description" class="modal__description">Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad <a href="#">minim</a> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <iframe class="modal__player" data-video-id="x6iyz1AQhuU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </dialog>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

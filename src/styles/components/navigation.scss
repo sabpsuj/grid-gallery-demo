@@ -1,0 +1,21 @@
+.navigation {
+  &__title {
+    margin: 0 0 20px;
+    font-size: var(--font-size-h3);
+
+    @include breakpoint(md) {
+      text-align: center;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+
+    @include breakpoint(md) {
+      justify-content: center;
+    }
+  }
+}

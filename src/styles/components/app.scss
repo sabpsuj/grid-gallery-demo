@@ -1,0 +1,15 @@
+.app {
+  padding: 30px;
+  max-width: 1260px;
+  margin: 0 auto;
+
+  &__header,
+  &__navigation,
+  &__content {
+    margin-bottom: 20px;
+  }
+
+  &__footer {
+    font-size: var(--font-size-text-sm);
+  }
+}
