@@ -1,9 +1,11 @@
+@use "../mixins.scss";
+
 .header {
   &__title {
     margin: 0 0 20px;
     font-size: var(--font-size-h2);
 
-    @include breakpoint(md) {
+    @include mixins.breakpoint(md) {
       text-align: center;
     }
   }

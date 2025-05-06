@@ -1,12 +1,10 @@
-@import "./styles/variables.scss";
-@import "./styles/fonts.scss";
-@import "./styles/base.scss";
+@use "./styles/variables.scss";
+@use "./styles/fonts.scss";
+@use "./styles/base.scss";
 
-@import "./styles/mixins.scss";
-
-@import "./styles/components/app.scss";
-@import "./styles/components/header.scss";
-@import "./styles/components/navigation.scss";
-@import "./styles/components/button.scss";
-@import "./styles/components/gallery.scss";
-@import "./styles/components/modal.scss";
+@use "./styles/components/app.scss";
+@use "./styles/components/header.scss";
+@use "./styles/components/navigation.scss";
+@use "./styles/components/button.scss";
+@use "./styles/components/gallery.scss";
+@use "./styles/components/modal.scss";

@@ -1,9 +1,11 @@
+@use "../mixins.scss";
+
 .navigation {
   &__title {
     margin: 0 0 20px;
     font-size: var(--font-size-h3);
 
-    @include breakpoint(md) {
+    @include mixins.breakpoint(md) {
       text-align: center;
     }
   }
@@ -14,7 +16,7 @@
     justify-content: flex-start;
     gap: 15px;
 
-    @include breakpoint(md) {
+    @include mixins.breakpoint(md) {
       justify-content: center;
     }
   }

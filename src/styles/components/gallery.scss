@@ -1,9 +1,11 @@
+@use "../mixins.scss";
+
 .gallery {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
 
-  @include breakpoint(md) {
+  @include mixins.breakpoint(md) {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
@@ -26,7 +28,7 @@
       aspect-ratio: 1.68;
     }
 
-    @include breakpoint(md) {
+    @include mixins.breakpoint(md) {
       aspect-ratio: unset;
 
       &--1 {
